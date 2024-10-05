@@ -34,7 +34,7 @@
 """
 
 from collections import namedtuple
-
+import chex
 from typing import Any, Callable, TypeVar, Union, Tuple, Dict, Optional
 
 import functools
@@ -315,7 +315,7 @@ SUZUKI_YOSHIDA_WEIGHTS = {
 }
 
 
-@dataclasses.dataclass
+@chex.dataclass
 class NoseHooverChain:
   """State information for a Nose-Hoover chain.
 
@@ -499,7 +499,7 @@ def default_nhc_kwargs(tau: float, overrides: Dict) -> Dict:
   }
 
 
-@dataclasses.dataclass
+@chex.dataclass
 class NVTNoseHooverState:
   """State information for an NVT system with a Nose-Hoover chain thermostat.
 
