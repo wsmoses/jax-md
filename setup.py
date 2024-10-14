@@ -27,7 +27,7 @@ INSTALL_REQUIRES = [
     'jax',
     'jaxlib',
     'flax',
-    'jraph',
+    'jraph@git+https://github.com/wsmoses/jraph@b00d9a03db76c69a258a86df81638b9a2f28829f'
     'einops',
     'ml_collections',
     'e3nn-jax',
